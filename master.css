@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+:root {
+    --main-top-color: #9DB3ED;
+    --second-top-color: #172D67;
+    --icon-top-open-blue: white;
+    --icon-top-dark-blue: black;
+    --main-bottom-color: #F9F9F9;
+    --second-bottom-color: #050C26;
+}
+
+
+/* color class */
+
+.open-blue .calc .top {
+    background: var(--main-top-color);
+}
+
+.dark-blue .calc .top {
+    background: var(--second-top-color);
+}
+
+.i-icon-open .calc .top .first i {
+    color: var(--icon-top-open-blue);
+}
+
+.i-icon-dark .calc .top .first i {
+    color: var(--icon-top-dark-blue);
+}
+
+.sun-open .calc .top .first .left .color {
+    background: linear-gradient(#FBE950, #FCC25B);
+}
+
+.sun-dark .calc .top .first .left .color {
+    background: linear-gradient(#494942, #27271F);
+}
+
+.open-input .calc .top .second input {
+    color: #000;
+}
+
+.dark-input .calc .top .second input {
+    color: white;
+}
+
+.open-bottom .calc .bottom {
+    height: 49vh;
+    background-color: var(--main-bottom-color);
+}
+
+.dark-bottom .calc .bottom {
+    height: 49vh;
+    background-color: var(--second-bottom-color);
+}
+
+.open-span .calc .bottom .left span {
+    color: #5E5E5E
+}
+
+.dark-span .calc .bottom .left span {
+    color: #B1B3B9
+}
+
+.i-icon-botton-open .calc .bottom .left i {
+    background-color: white;
+    color: #5A73C5;
+}
+
+.i-icon-botton-dark .calc .bottom .left i {
+    background-color: #0A173A;
+    color: #5A73C5;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/* end color class */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.back {
+    background: linear-gradient(#4B9FBB, #235F77);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.back .calc {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 80vh;
+    border-radius: 25px;
+}
+
+.back .calc .top {
+    width: 100%;
+    height: 31vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.back .calc .top .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.back .calc .top .first .left {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.back .calc .top .first .left:hover {
+    cursor: pointer;
+}
+
+.back .calc .top .first .left .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.back .calc .top .first .right {
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.back .calc .top .second {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.back .calc .top .second input {
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.back .calc .top .second input:first-child {
+    font-size: 23px;
+    direction: rtl;
+    padding-right: 35px;
+    padding-left: 35px;
+    letter-spacing: 4px;
+}
+
+.back .calc .top .second input:last-child {
+    font-size: 50px;
+    direction: rtl;
+    padding-right: 35px;
+    padding-left: 35px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.back .calc .bottom {
+    height: 49vh;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+.back .calc .bottom .left {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(25%, 1fr));
+}
+
+.back .calc .bottom .left span,
+.back .calc .bottom .left i {
+    font-size: 61px;
+    padding: 22px;
+    height: 100%;
+}
+
+.back .calc .bottom .left span:hover,
+.back .calc .bottom .left i:hover {
+    cursor: pointer;
+}
+
+.back .calc .bottom .left .fa-angle-up {
+    grid-column: 1/4;
+    border-top-left-radius: 25px;
+    background-color: #EE6F28;
+}
